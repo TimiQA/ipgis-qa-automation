@@ -1,0 +1,16 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# OS hidden files
+.DS_Store
+
+# Test reports and artifacts
+allure-results/
+allure-report/
+test-results/
+
+# Environment variables
+.env

@@ -10,8 +10,7 @@ The API endpoint responsible for IP metadata resolution handles invalid input st
 1. Send a GET request to the IP lookup endpoint with an invalid IP format in the query parameters:
    ```bash
    curl -X GET "[https://ipgis.cc/api/ip?ip=not_an_ip_address](https://ipgis.cc/api/ip?ip=not_an_ip_address)"
-
-```
+   ```
 
 2. Observe the HTTP response status code and payload.
 
@@ -28,6 +27,7 @@ The server returns a successful response code and leaks/substitutes the fallback
 
 * **Actual Status Code:** `200 OK`
 * **Actual Payload:**
+
 ```json
 {
   "ip": "178.204.XX.XX", 
@@ -40,7 +40,7 @@ The server returns a successful response code and leaks/substitutes the fallback
 
 
 
-## 🧠 QA Architectural Insight & Automation Note
+## QA Architectural Insight & Automation Note
 
 This behavior was detected automatically during the integration testing phase using the `test_invalid_ip_format` test case.
 

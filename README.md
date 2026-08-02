@@ -1,4 +1,3 @@
-```markdown
 # IPGIS - Test Automation Framework
 
 An automated testing framework for the IPGIS network analytics platform, built with Python, Playwright, and Pytest. This project demonstrates a hybrid testing approach, covering both the FastAPI backend and the React frontend.
@@ -26,14 +25,12 @@ An automated testing framework for the IPGIS network analytics platform, built w
    ```bash
    python -m venv .venv
    source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-```
+   ```
 
 3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 playwright install chromium
-
 ```
 
 
@@ -59,7 +56,6 @@ pytest tests/ui/ -v
 ```bash
 pytest -n auto --alluredir=allure-results
 allure serve allure-results
-
 ```
 
 ## 📊 CI/CD & Reporting
